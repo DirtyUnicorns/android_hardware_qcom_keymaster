@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 ifeq ($(call is-vendor-board-platform,QCOM),true)
 
-LOCAL_MODULE := keystore.qcom
+LOCAL_MODULE := keystore.$(TARGET_BOARD_PLATFORM)
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 
